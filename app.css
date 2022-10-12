@@ -1,0 +1,142 @@
+body {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #FFF5ED;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: lighter;
+    color: #5e615f;
+
+}
+
+.layout-container {
+    height: 100%;
+    width: 100%;;
+    position: relative;
+    display: flex;
+}
+
+.wave-background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: -1;
+}
+
+.wave-background svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 352px;
+    transform: rotateY(180deg);
+}
+
+.wave-background .shape-fill {
+    fill: rgba(227, 71, 5, 0.84)
+}
+
+.left-container {
+    width: 50%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+}
+
+.code-section {
+    padding: 5% 0 0 15%;
+}
+
+span {
+    padding: 0 0 0 20px;
+}
+
+.input-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    color: #070909;
+}
+
+.bold {
+    font-weight: bold;
+    color: #070909;
+}
+
+.span {
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown {
+    width: 80%;
+    margin: 0;
+    padding: 0;
+}
+
+.get-color {
+    border: none;
+    padding: 0 0 0 5px;
+    font-size: 12px;
+
+}
+
+.get-color:focus {
+    outline: none;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    right: 0;
+
+}
+
+ul {
+    list-style: none;
+}
+
+.auto-items {
+    padding: 6px 0 0 0;
+    border-bottom: 1px solid rgba(197, 190, 194, 0.35);
+}
+
+.auto-items:hover {
+    background-color: rgba(197, 190, 194, 0.45);
+}
+
+
+.right-container {
+    width: 50%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.mabel-image {
+    align-self: center;
+    height: 375px;
+    width: 300px;
+    background-image: url(/assets/mabel-full.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+    border: 8px solid #EDE9D0;
+}
+
+.mabel-image .mabel-shirt {
+    mix-blend-mode: multiply;
+}
+
+.mabel-shirt {
+    fill: yellow;
+}
