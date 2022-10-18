@@ -184,12 +184,7 @@ getColor.addEventListener("keyup", (e) => {
   }
 
   if (e.code === "Enter") {
-    console.log(getColor.value);
-    console.log(e.button);
-
-    result.innerText = getColor.value;
-    chosenColor = getColor.value;
-    shirtOverlay.style.fill = "blue";
+    shirtOverlay.style.fill = getColor.value;
     e.preventDefault();
   }
 });
@@ -207,7 +202,3 @@ const removeElements = () => {
     item.remove();
   });
 };
-
-liItems.addEventListener("mouseup", (e) => {
-  console.log("yesssss");
-});

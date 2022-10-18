@@ -5,86 +5,93 @@ body {
     padding: 0;
     margin: 0;
     overflow-x: hidden;
-    background-color: #FFF5ED;
+    background-color: #020412;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: lighter;
-    color: #5e615f;
+    color: #fff;
+}
 
+.header {
+    display: flex;
+    width: 100%;
+    height: 15%;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logo {
+    width: 60px;
+    height: 30px;
+    text-align: center;
 }
 
 .layout-container {
     height: 100%;
-    width: 100%;;
-    position: relative;
+    width: 100%;
     display: flex;
 }
 
-.wave-background {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    z-index: -1;
-}
-
-.wave-background svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 352px;
-    transform: rotateY(180deg);
-}
-
-.wave-background .shape-fill {
-    fill: rgba(227, 71, 5, 0.84)
-}
-
 .left-container {
-    width: 50%;
+    width: 33%;
     height: 100%;
-    padding: 0;
-    margin: 0;
-    font-size: 12px;
+    padding: 8% 0 0 0;
+    font-size: 10px;
+    
+}
+
+.language-title {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height:30px;
+    background-color: #15282E;
+    padding: 0 0 0 10px;
+    margin: 0 0 20px 0;
 }
 
 .code-section {
-    padding: 5% 0 0 15%;
+    display: flex;
+}
+
+.code-line-numbers {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 15%;
+    padding: 0 2% 0 0;
+    font-size: 10px;
+}
+
+.code-line-text {
+    background-color: #15282E;
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+}
+
+.line-item {
+    margin: 4px;
 }
 
 span {
-    padding: 0 0 0 20px;
+    padding: 0 0 0 12px;
 }
 
 .input-section {
     width: 100%;
     display: flex;
     flex-direction: row;
-    color: #070909;
-}
-
-.bold {
-    font-weight: bold;
-    color: #070909;
-}
-
-.span {
-    margin: 0;
-    padding: 0;
-}
-
-.dropdown {
-    width: 80%;
-    margin: 0;
-    padding: 0;
+    color: #fff;
 }
 
 .get-color {
+    width: 90%;
     border: none;
     padding: 0 0 0 5px;
-    font-size: 12px;
-
+    font-size: 10px;
+    background-color: #15282E;
+    color: #fff;
 }
 
 .get-color:focus {
@@ -95,7 +102,6 @@ span {
     margin: 0;
     padding: 0;
     right: 0;
-
 }
 
 ul {
@@ -104,33 +110,32 @@ ul {
 
 .auto-items {
     padding: 6px 0 0 0;
-    border-bottom: 1px solid rgba(197, 190, 194, 0.35);
+    border-bottom: 0.7px solid rgba(197, 190, 194, 0.35);
 }
 
 .auto-items:hover {
     background-color: rgba(197, 190, 194, 0.45);
 }
 
-
-.right-container {
-    width: 50%;
+.middle-container {
+    width: 33%;
     height: 100%;
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: left;
+    flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
 }
 
 .mabel-image {
     align-self: center;
-    height: 375px;
-    width: 300px;
+    height: 255px;
+    width: 190px;
     background-image: url(/assets/mabel-full.jpg);
     background-repeat: no-repeat;
     background-size: 100% auto;
     position: absolute;
-    border: 8px solid #EDE9D0;
 }
 
 .mabel-image .mabel-shirt {
@@ -138,5 +143,25 @@ ul {
 }
 
 .mabel-shirt {
-    fill: yellow;
+    fill: pink;
+}
+
+.right-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 33%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.continue-btn {
+    height: 40px;
+    width: 120px;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    background: none;
+    color: #fff;
+    margin: 0 0 20% 0;
 }
