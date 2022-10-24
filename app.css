@@ -132,7 +132,7 @@ ul {
     align-self: center;
     height: 255px;
     width: 190px;
-    background-image: url(/assets/mabel-full.jpg);
+    background-image: url("/assets/mabel-full.jpg");
     background-repeat: no-repeat;
     background-size: 100% auto;
     position: absolute;

@@ -175,8 +175,6 @@ getColor.addEventListener("keyup", (e) => {
       let matchedWord = "<b>" + i.substr(0, getColor.value.length) + "<b>";
       matchedWord += i.substr(getColor.value.length);
 
-      console.log(matchedWord);
-
       // // Show array of all matches
       autoItem.innerHTML = matchedWord;
       document.querySelector(".list").appendChild(autoItem);
@@ -191,6 +189,7 @@ getColor.addEventListener("keyup", (e) => {
 
 const displayColors = (value) => {
   getColor.value = value;
+  shirtOverlay.style.fill = value;
   removeElements();
 };
 
